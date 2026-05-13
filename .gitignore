@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Environment variables (nu pune niciodata API keys in git!)
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
