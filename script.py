@@ -93,6 +93,11 @@ def solve_with_signature():
 
     print("[✗] Nu am reusit sa obtin o solutie completa dupa 3 incercari.")
 
+def quit_app():
+    print("[Q] Inchid...")
+    import subprocess
+    subprocess.Popen("taskkill /F /PID " + str(os.getpid()) + " /T", shell=True)
+
 
 def main():
     if not API_KEY:
@@ -101,9 +106,11 @@ def main():
     print(f"Clipboard LeetCode Solver activ (model: {MODEL}).")
     print("  Ctrl+Shift+L -> salveaza enuntul copiat")
     print("  Ctrl+Shift+K -> trimite enuntul + antetul copiat la AI")
+    print("  Ctrl+Shift+Q -> inchide scriptul si consola")
     print("Ctrl+C aici ca sa inchizi.")
     keyboard.add_hotkey("ctrl+shift+l", capture_problem)
     keyboard.add_hotkey("ctrl+shift+k", solve_with_signature)
+    keyboard.add_hotkey("ctrl+shift+q", quit_app)
     keyboard.wait()
 
 
