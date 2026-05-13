@@ -96,7 +96,8 @@ def solve_with_signature():
 def quit_app():
     print("[Q] Inchid...")
     import subprocess
-    subprocess.Popen("taskkill /F /PID " + str(os.getpid()) + " /T", shell=True)
+    subprocess.Popen("exit", shell=True)
+    os._exit(0)
 
 
 def main():
