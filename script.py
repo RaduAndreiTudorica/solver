@@ -95,7 +95,6 @@ def solve_with_signature():
 
 def quit_app():
     print("[Q] Inchid...")
-    import subprocess
     os._exit(0)
 
 

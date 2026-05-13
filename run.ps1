@@ -21,4 +21,4 @@ $env:GEMINI_API_KEY = $apiKey
 # Ruleaza
 Write-Host "Pornind LeetCode Solver..." -ForegroundColor Cyan
 & .\.venv\Scripts\python.exe script.py
-exit
+Stop-Process -Id $PID
