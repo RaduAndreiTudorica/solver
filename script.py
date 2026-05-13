@@ -96,7 +96,6 @@ def solve_with_signature():
 def quit_app():
     print("[Q] Inchid...")
     import subprocess
-    subprocess.Popen("exit", shell=True)
     os._exit(0)
 
 
