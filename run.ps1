@@ -1,4 +1,4 @@
-# LeetCode Solver - Run Script
+# Verilog Solver - Run Script
 # Usage: .\run.ps1
 
 # Verifica venv
@@ -19,6 +19,6 @@ if (-not $apiKey) {
 $env:GEMINI_API_KEY = $apiKey
 
 # Ruleaza
-Write-Host "Pornind LeetCode Solver..." -ForegroundColor Cyan
+Write-Host "Pornind Verilog Solver..." -ForegroundColor Cyan
 & .\.venv\Scripts\python.exe script.py
 Stop-Process -Id $PID

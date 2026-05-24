@@ -106,7 +106,7 @@ def solve():
         solution_buffer["active"] = False
         stored_file["text"] = None
         print(f"[OK] Solutia ({len(solution)} chars) e in clipboard.")
-        print("     Apasa Ctrl+Shift+T in editor pentru stealth typing.")
+        print("     Apasa Ctrl+Alt+T in editor pentru stealth typing.")
     except Exception as e:
         print(f"[ERR] {e}")
 
@@ -119,7 +119,7 @@ def toggle_typing():
     if solution_buffer["active"]:
         remaining = len(solution_buffer["text"]) - solution_buffer["index"]
         print(f"[T] STEALTH TYPING PORNIT. {remaining} chars ramase. "
-              f"Apasa orice tasta in editor. Ctrl+Shift+T = stop.")
+              f"Apasa orice tasta in editor. Ctrl+Alt+T = stop.")
     else:
         print(f"[T] STEALTH TYPING OPRIT la indexul {solution_buffer['index']}/{len(solution_buffer['text'])}.")
 
