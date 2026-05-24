@@ -2,7 +2,7 @@
 Verilog SOC Solver (Gemini)
 - Ctrl+Shift+L : salveaza fisierul .v copiat (poti apela de mai multe ori pentru fisiere multiple)
 - Ctrl+Shift+K : rezolva si pune solutia in clipboard
-- Ctrl+Shift+T : toggle stealth typing - fiecare tasta apasata scrie urmatorul caracter din solutie
+- Ctrl+Alt+T : toggle stealth typing - fiecare tasta apasata scrie urmatorul caracter din solutie
 - Ctrl+Shift+R : reseteaza
 - Ctrl+Shift+Q : inchide scriptul
 """
@@ -187,14 +187,14 @@ def main():
     print(f"Verilog SOC Solver activ (model: {MODEL}).")
     print("  Ctrl+Shift+L -> salveaza fisierul .v copiat (apeleaza de mai multe ori pentru fisiere multiple)")
     print("  Ctrl+Shift+K -> rezolva si pune solutia in clipboard")
-    print("  Ctrl+Shift+T -> toggle stealth typing")
+    print("  Ctrl+Alt+T -> toggle stealth typing")
     print("  Ctrl+Shift+R -> reseteaza")
     print("  Ctrl+Shift+Q -> inchide")
     print()
 
     keyboard.add_hotkey("ctrl+shift+l", capture_file)
     keyboard.add_hotkey("ctrl+shift+k", solve)
-    keyboard.add_hotkey("ctrl+shift+t", toggle_typing)
+    keyboard.add_hotkey("ctrl+alt+t", toggle_typing)
     keyboard.add_hotkey("ctrl+shift+r", reset)
     keyboard.add_hotkey("ctrl+shift+q", quit_script)
 
