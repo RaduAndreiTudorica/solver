@@ -169,6 +169,11 @@ def on_key_event(event):
     char = solution_buffer["text"][solution_buffer["index"]]
     solution_buffer["index"] += 1
     keyboard.write(char)
+    if char == '\n':
+        # dupa newline, sterge auto-indent-ul editorului
+        keyboard.send("home")
+        keyboard.send("shift+end")
+        keyboard.send("delete")
     return False
 
 
