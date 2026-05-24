@@ -5,7 +5,7 @@ Rezolva probleme LeetCode automat via clipboard + hotkey, folosind Gemini AI.
 ## Setup (o singura data)
 
 ```powershell
-git clone https://github.com/username/leetcode-solver
+git clone git@github.com:RaduAndreiTudorica/solver.git
 cd leetcode-solver
 .\setup.ps1
 ```
